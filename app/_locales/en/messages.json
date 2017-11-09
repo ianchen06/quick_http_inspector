@@ -1,0 +1,18 @@
+{
+  "appName": {
+    "message": "Quick HTTP Inspector",
+    "description": "The name of the application"
+  },
+  "appShortName": {
+    "message": "qexptr",
+    "description": "The short_name (maximum of 12 characters recommended) is a short version of the app's name."
+  },
+  "appDescription": {
+    "message": "nice chrome extension to export network to Python",
+    "description": "The description of the application"
+  },
+  "browserActionTitle": {
+    "message": "Quick HTTP Inspector",
+    "description": "The title of the browser action button"
+  }
+}
