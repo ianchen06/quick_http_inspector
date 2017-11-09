@@ -1,5 +1,7 @@
 # quick_chrome_network_exporter
 
+https://chrome.google.com/webstore/detail/quick-http-inspector/holkomabobpkbfdfnjomglmcgaeeojpg
+
 nice chrome extension to export network to Python
 
 ## Installation
