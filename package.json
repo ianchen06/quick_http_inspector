@@ -26,10 +26,13 @@
     "babel-cli": "6.x.x",
     "babel-core": "6.x.x",
     "babel-loader": "7.x.x",
+    "babel-plugin-import": "^1.6.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "chai": "4.x.x",
     "chromereload": "0.0.2",
+    "css-loader": "^0.28.7",
     "debounce": "1.x.x",
     "del": "3.x.x",
     "gulp": "3.x.x",
@@ -50,16 +53,26 @@
     "gulp-tag-version": "1.x.x",
     "gulp-util": "3.x.x",
     "gulp-zip": "^4.x.x",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "less-vars-to-js": "^1.2.0",
+    "remote-redux-devtools": "^0.5.12",
     "require-dir": "0.x.x",
     "standard": "^10.0.2",
+    "style-loader": "^0.19.0",
     "vinyl-named": "1.x.x",
-    "webpack": "3.x.x",
+    "webpack": "^3.8.1",
     "webpack-stream": "3.x.x",
     "yargs": "^8.x.x"
   },
   "dependencies": {
+    "antd": "^2.13.10",
     "immutable": "^3.8.2",
+    "lodash": "^4.17.4",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2"
   }
 }

@@ -26,7 +26,7 @@ function onAttach(tabId) {
   }
 
   chrome.windows.create(
-      {url: "./pages/headers.html?" + tabId, type: "popup", width: 800, height: 600},
+      {url: "./pages/headers.html?" + tabId, type: "popup", left:0, top: window.screen.height - 400, width: window.screen.availWidth, height: 400},
       (_window) => {window_id = _window.id}
     );
 }
@@ -35,8 +35,13 @@ chrome.webNavigation.onCommitted.addListener(function(details){
   if (details.transitionType != 'auto_subframe') {
     const app_window = chrome.extension.getViews({windowId: window_id})
     if (app_window.length > 0) {
+      console.log("Reloading")
       app_window[0].document.querySelector('#container').innerHTML = ""
     }
-    
   }
 });
+
+// chrome.tabs.onActivated.addListener((activeInfo) => {
+//   console.log(`${JSON.stringify(activeInfo)}`)
+//   chrome.debugger.attach({tabId:activeInfo.tabId}, version)
+// });

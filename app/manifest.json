@@ -23,6 +23,7 @@
   },
   "permissions": [
     "debugger",
+    "tabs",
     "webRequest",
     "webRequestBlocking",
     "webNavigation"
