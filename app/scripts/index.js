@@ -35,16 +35,21 @@ function onEvent(debuggeeId, message, params) {
 
   if (message == "Network.requestWillBeSent") {
     if (!params.request.url.startsWith('data')) {
-      console.log(`[${params.requestId}]request`)
+      // console.log(`[${params.requestId}][request]`, params.request.url, params.request)
+      
+      // console.log(`[${params.requestId}][request]`)
       store.dispatch(addRequest(params))
     }
 
     if (params.redirectResponse) {
-      console.log(`[${params.requestId}]redirect`)
+      // console.log(`[${params.requestId}][redirect]`)
       store.dispatch(addResponse(params))
     }
   } else if (message == "Network.responseReceived") {
-      console.log(`[${params.requestId}]response`)
+      // console.log(`[${params.requestId}][response]`, params.response.url, params.response)
+      // if(params.request.url.includes('google')){
+      //   console.log(`[${params.requestId}][response]`, params.response)
+      // }
       store.dispatch(addResponse(params))
   }
 }
